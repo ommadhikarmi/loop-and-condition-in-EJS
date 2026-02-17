@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+</head>
+<body>
+    <h1>User List Page</h1>
+    <!-- <ul>
+        
+            <% for(i=0;i<users.length;i++){ %>
+                <li>
+                    <%= users[i] %>
+                </li>
+            <% } %>
+        
+    </ul> -->
+
+<% if(islogin) { %>
+    <h2> user has login</h2>
+    <ul>
+        <% for(i=0;i<users.length;i++) {%>
+            <li>
+                <%=users[i] %>
+            </li>
+          
+        <% } %>
+          
+    </ul>
+    <%} else { %>
+        <h2> please login first </h2>
+    <% } %>
+
+   
+
+   
+</body>
+</html>
